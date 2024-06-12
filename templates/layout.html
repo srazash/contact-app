@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact App</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+	<h1>contacts.app</h1>
+    <h2>a demo contacts application</h2>
+
+    {% for message in get_slashed_messages() %}
+        <div class="flash">{{ message }}</div>
+    {% endfor %}
+
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
